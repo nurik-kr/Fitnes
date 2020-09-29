@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Fitnes</string>
+    <string name="api_key">pk.eyJ1IjoianVtYWJla292IiwiYSI6ImNrZm5uc3JkOTA5b3gycnBjeGNjYWRldWwifQ.yoHumQyfeeIEdAXl0dtyKw</string>
+    <string name="next">Next</string>
+
+</resources>

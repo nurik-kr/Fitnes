@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "215799126064",
+    "firebase_url": "https://fitnes-14fe0.firebaseio.com",
+    "project_id": "fitnes-14fe0",
+    "storage_bucket": "fitnes-14fe0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215799126064:android:be3e57aa42ed9ecfeef5f5",
+        "android_client_info": {
+          "package_name": "ru.nurik.fitnes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215799126064-4ee92s78kp9s0v975n8q5umddsg0ap53.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6ZH0bgBn2ZHsLDmGduR6X1hLaQZN49Dk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215799126064-4ee92s78kp9s0v975n8q5umddsg0ap53.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
