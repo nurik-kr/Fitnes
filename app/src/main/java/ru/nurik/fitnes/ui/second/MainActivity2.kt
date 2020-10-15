@@ -1,4 +1,4 @@
-package ru.nurik.fitnes.ui
+package ru.nurik.fitnes.ui.second
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

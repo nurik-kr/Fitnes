@@ -1,4 +1,4 @@
-package ru.nurik.fitnes.Utils
+package ru.nurik.fitnes.utils
 
 import android.Manifest
 import android.content.pm.PackageManager
