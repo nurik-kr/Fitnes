@@ -19,7 +19,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:tabBackground="@color/colorPrimary"
         app:tabIndicatorHeight="0dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="5dp"
         app:layout_constraintBottom_toBottomOf="@id/OnviewPage"/>
 
     <androidx.appcompat.widget.AppCompatButton

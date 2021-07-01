@@ -5,6 +5,7 @@
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
@@ -17,8 +18,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity android:name=".ui.onBoard.OnBoardActivityTwo" />
-        <activity android:name=".ui.onBoard.OnBoardActivity" />
+        <activity android:name=".ui.onBoard.OnBoardActivity"/>
+
         <activity android:name=".ui.splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +29,6 @@
         </activity>
 
         <service android:name=".ui.MyForegroundService" />
-
         <activity android:name=".ui.second.MainActivity2" />
         <activity android:name=".ui.main.MainActivity" />
     </application>

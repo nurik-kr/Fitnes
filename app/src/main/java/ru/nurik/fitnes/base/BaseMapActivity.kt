@@ -30,7 +30,10 @@ abstract class BaseMapActivity : SupportMapActivity() {
     private var symbol: Symbol? = null
     private var symbolManager: SymbolManager? = null
 
-    override fun onMapLoaded(mapBoxMap: MapboxMap, style: Style) { // после загрузки карты и стиля выз эта функция
+    override fun onMapLoaded(
+        mapBoxMap: MapboxMap,
+        style: Style
+    ) { // после загрузки карты и стиля выз эта функция
         setupListeners(mapBoxMap) // нажимая на карту вставляем маркер
         loadImages(style) // грузим картинку
         initSource(style) // грузим
@@ -85,7 +88,8 @@ abstract class BaseMapActivity : SupportMapActivity() {
     }
 
     private fun addMarker(LatLng: LatLng) { // добавляем маркер
-        symbol?.let { symbolManager?.delete(it) } // при каждом дабвлении удаляется старый маркер и проверка что гео не ноль
+//        symbol?.let { symbolManager?.delete(it) } // при каждом дабвлении удаляется старый маркер и проверка что гео не ноль
+
 
         val symbolOptions = SymbolOptions()
             .withLatLng(LatLng)

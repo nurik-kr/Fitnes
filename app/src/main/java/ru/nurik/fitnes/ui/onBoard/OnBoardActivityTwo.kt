@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import kotlinx.android.synthetic.main.onboard_page.*
 import ru.nurik.fitnes.R
+import ru.nurik.fitnes.data.PreferenceHelper
 import ru.nurik.fitnes.ui.main.MainActivity
 
 class OnBoardActivityTwo : AppCompatActivity() {
@@ -40,6 +41,7 @@ class OnBoardActivityTwo : AppCompatActivity() {
         })
         Btngo.setOnClickListener {
             if (checkToPage(OnviewPage.currentItem)) {
+                PreferenceHelper.setIsFirstLaunch() // сохранет при 2ом запуске сразу открывает маинАктивити
                 startActivity(Intent(this, MainActivity::class.java))
                 finish()
             } else {
@@ -54,7 +56,7 @@ class OnBoardActivityTwo : AppCompatActivity() {
         val adapter = OnBoardAdapter(supportFragmentManager)
         OnviewPage.adapter = adapter
         list.add(OnBoardFragment.getInstance(DataOnBoard(R.drawable.fintes, "Добро пожаловать в наш ", "Фитнес Тренеровку")))
-        list.add(OnBoardFragment.getInstance(DataOnBoard(R.drawable.fitnes, "В нашем приложении вы можете каждый день рассчитывать", "Свои шаги")))
+        list.add(OnBoardFragment.getInstance(DataOnBoard(R.drawable.fitnes, "Вы можете каждый день рассчитывать", "Свои шаги")))
         list.add(OnBoardFragment.getInstance(DataOnBoard(R.drawable.day, "Зарегистрируйтесь и пользуйтесь на здоровье", "С Уважением MD2001")))
         adapter.update(list)
         OnTabLT.setupWithViewPager(OnviewPage)

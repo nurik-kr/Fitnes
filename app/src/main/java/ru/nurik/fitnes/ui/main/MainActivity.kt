@@ -37,7 +37,7 @@ class MainActivity : BaseMapActivity() {
     }
 
 
-    fun startForegroundService() {
+    private fun startForegroundService() {
         startService(intenT)
     }
 
